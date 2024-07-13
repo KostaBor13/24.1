@@ -1,0 +1,12 @@
+[
+{
+    "model": "materials.course",
+    "pk": 1,
+    "fields": {
+        "owner": 4,
+        "name": "тит",
+        "description": "",
+        "image": ""
+    }
+}
+]
