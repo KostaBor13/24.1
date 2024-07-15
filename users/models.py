@@ -95,6 +95,22 @@ class Payment(models.Model):
         help_text='выберите способ оплаты'
     )
 
+    payment_link = models.URLField(
+        max_length=400,
+        verbose_name='ссылка на оплату',
+        **NULLABLE
+    )
+    payment_status = models.CharField(
+        max_length=30,
+        verbose_name='статус платежа',
+        **NULLABLE
+    )
+    session_id = models.CharField(
+        max_length=255,
+        verbose_name='id сессии',
+        **NULLABLE
+    )
+
 
     def clean(self):
         if self.paid_course and self.paid_lesson:

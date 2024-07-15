@@ -23,4 +23,4 @@ class UserSerializer(serializers.ModelSerializer):
 class UserViewSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        exclude = ('password', 'payment_history',)
+        exclude = ('password',)
