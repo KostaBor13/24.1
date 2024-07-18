@@ -20,5 +20,6 @@ subscription==0.1.1
 tasks==2.8.0
 stripe==10.3.0
 django-celery-beat==2.6.0
+coverage==7.6.0
 
 
