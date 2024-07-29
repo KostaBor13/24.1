@@ -15,8 +15,6 @@ def check_last_login():
     users = User.objects.filter(is_active=True)
 
     for user in users:
-        filtered_user = User.objects.get(pk=user.pk)
-
         current_date_time = datetime.now(pytz.timezone(settings.TIME_ZONE))
         user_last_login = user.last_login
         inactive_period = user_last_login + relativedelta(months=1)  # (days=1)

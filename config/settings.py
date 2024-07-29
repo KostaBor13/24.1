@@ -142,7 +142,7 @@ USE_TZ = True
 DOMAIN_NAME = 'http://localhost:8000'
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = (BASE_DIR / "static",)
+
 
 # Media files (uploaded files)
 MEDIA_URL = "media/"
